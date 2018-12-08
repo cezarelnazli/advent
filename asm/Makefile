@@ -13,11 +13,11 @@ day2b: day2b.S
 	ld -lc day2b.o -o $@
 	chmod +x $@
 
-day3a: day3a.S
-	$(AS) $< -o day3a.o
-	ld -lc day3a.o -o $@
+day3: day3.S
+	$(AS) $< -o day3.o
+	ld -lc day3.o -o $@
 	chmod +x $@
 
 clean:
 	rm -f a.out *.o
-	rm -f day1b day2a day2b
+	rm -f day1b day2a day2b day3
