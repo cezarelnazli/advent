@@ -1,3 +1,7 @@
+.bss:
+	.lcomm seen, 200000
+	.lcomm nums, 800000
+
 .text:
 	.global _main
 	scanf_str: .asciz " %ld"
@@ -59,7 +63,3 @@ print_res:
 
 	leave
 	ret
-
-.bss:
-	.lcomm seen, 200000
-	.lcomm nums, 800000
