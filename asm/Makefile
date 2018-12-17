@@ -18,6 +18,11 @@ day3: day3.S
 	ld -lc day3.o -o $@
 	chmod +x $@
 
+day4: day4.S
+	$(AS) $< -o day4.o
+	ld -lc day4.o -o $@
+	chmod +x $@
+
 clean:
 	rm -f a.out *.o
-	rm -f day1b day2a day2b day3
+	rm -f day1b day2a day2b day3 day4
